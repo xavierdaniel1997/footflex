@@ -1,0 +1,26 @@
+import React from "react";
+import {AiOutlineHeart} from "react-icons/ai";
+import shoes1 from "../assets/images/shoes1.png";
+
+const ShoesCard = () => {
+  return (
+    <div className="mt-8  max-sm:mt-5">
+      <div className="lg:w-80 bg-slate-200 p-4 rounded-xl md:w-60 max-sm:w-44">
+        <div className="flex justify-end ">
+          <button className="bg-white p-2 text-xl rounded-full">
+            <AiOutlineHeart />
+          </button>
+        </div>
+        <div className="flex justify-center items-center">
+          <img src={shoes1} alt="" />
+        </div>
+      </div>
+      <div className="p-2">
+        <h1 className="text-gray-600 font-semibold">Nike Air Max 1200s</h1>
+        <p className="text-gray-600">Rs 14000</p>
+      </div>
+    </div>
+  );
+};
+
+export default ShoesCard;
