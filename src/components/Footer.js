@@ -5,7 +5,7 @@ import {BiLogoMastercard} from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <div className="mt-10 bg-black">
+    <div className="bg-black">
       <div className="py-20 flex flex-col gap-4 justify-center items-center text-center ">
         <h1 className="font-semibold text-2xl text-white">
           FOOT

@@ -3,6 +3,7 @@ import {AiOutlineSearch} from "react-icons/ai";
 import {BsBag, BsPerson} from "react-icons/bs";
 import {BiHeart} from "react-icons/bi";
 import {FiMenu} from "react-icons/fi";
+import {Link} from "react-router-dom";
 
 const NavBar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -21,9 +22,11 @@ const NavBar = () => {
         </div>
 
         {/* Logo (Centered on Small Devices) */}
-        <div className="text-black text-2xl font-bold ">
-          FOOT<span className="text-green-500">FLEX</span>
-        </div>
+        <Link to="/">
+          <div className="text-black text-2xl font-bold ">
+            FOOT<span className="text-green-500">FLEX</span>
+          </div>
+        </Link>
 
         {/* Profile Button (Right-aligned) */}
         <div className="lg:hidden">
@@ -36,9 +39,15 @@ const NavBar = () => {
         {menuVisible && (
           <div className="lg:hidden bg-white text-gray-600  absolute top-20 left-0 right-0 py-10 px-10">
             <ul className="flex flex-col gap-5 justify-center items-center font-semibold text-xl">
-              <li>MENS</li>
-              <li>WOMENS</li>
-              <li>KIDS</li>
+              <Link to="menshop">
+                <li>MENS</li>
+              </Link>
+              <Link to="womenshop">
+                <li>WOMENS</li>
+              </Link>
+              <Link to="kidshop">
+                <li>KIDS</li>
+              </Link>
             </ul>
           </div>
         )}
@@ -46,9 +55,15 @@ const NavBar = () => {
         {/* Search Bar */}
         <div className="hidden lg:flex  text-gray-600 justify-center items-center gap-10">
           <ul className="flex justify-around gap-10 font-semibold text-xl">
-            <li>MENS</li>
-            <li>WOMENS</li>
-            <li>KIDS</li>
+            <Link to="menshop">
+              <li>MENS</li>
+            </Link>
+            <Link to="womenshop">
+              <li>WOMENS</li>
+            </Link>
+            <Link to="kidshop">
+              <li>KIDS</li>
+            </Link>
           </ul>
           <div className="hidden lg:block bg-gray-100 text-gray-800 rounded-full p-2">
             <div className="flex justify-center items-center gap-3">
@@ -61,10 +76,13 @@ const NavBar = () => {
             </div>
           </div>
           <div className="flex justify-around gap-10 text-xl">
-            <button className="flex flex-col justify-center items-center text-2xl">
-              <BsPerson />
-              <span className="text-xs">Profile</span>
-            </button>
+            <Link to="/profile">
+              <button className="flex flex-col justify-center items-center text-2xl">
+                <BsPerson />
+                <span className="text-xs">Profile</span>
+              </button>
+            </Link>
+
             <button className="flex flex-col justify-center items-center">
               <BiHeart />
               <span className="text-xs">Wishlist</span>

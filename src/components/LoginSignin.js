@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {FcGoogle} from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const LoginSignin = () => {
   const [showSignIn, setShowSignIn] = useState(false);
@@ -9,6 +10,8 @@ const LoginSignin = () => {
   };
 
   return (
+    <>
+    <Link to="/"><span className="m-10 text-green-600 cursor-pointer">/ Home</span></Link>
     <div className="flex justify-center items-center min-h-screen">
       <div className="w-full lg:w-1/2 xl:w-1/3 flex flex-col gap-8 p-10  shadow-2xl border-2">
         <div className="flex flex-col gap-3 justify-center items-center">
@@ -62,6 +65,7 @@ const LoginSignin = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
