@@ -6,7 +6,7 @@ const filterToggleSlice = createSlice({
         toggleSideBar: true,
     },
     reducers:{
-        toggleFilterSideBar: (state, action) => {
+        toggleFilterSideBar: (state) => {
             state.toggleSideBar = !state.toggleSideBar
         }
     }

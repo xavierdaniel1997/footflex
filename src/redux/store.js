@@ -1,9 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import filterToggleSlice from "./filterToggleSlice";
+import filterToggleReducer from "./filterToggleSlice";
+import checkBoxFilterReducer from "./checkBoxFilterSlice";
+
 
 const store = configureStore({
     reducer: {
-        toggleFilterSideBar: filterToggleSlice,
+        toggleFilterSideBar: filterToggleReducer,
+        checkboxFilter: checkBoxFilterReducer
     }
 })
 export default store;

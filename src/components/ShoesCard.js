@@ -2,10 +2,10 @@ import React from "react";
 import {AiOutlineHeart} from "react-icons/ai";
 import shoes1 from "../assets/images/shoes1.png";
 
-const ShoesCard = ({width, padding}) => {
+const ShoesCard = () => {
   return (
     <div className="max-sm:mt-5">
-      <div className={`lg:${width} ${padding} bg-slate-200  rounded-xl md:w-60 max-sm:w-44`}>
+      <div className={`lg:w-auto p-8 bg-slate-200  rounded-xl md:w-60 max-sm:w-44`}>
         <div className="flex justify-end ">
           <button className="bg-white p-2 text-xl rounded-full">
             <AiOutlineHeart />

@@ -9,7 +9,7 @@ const NewArrival = () => {
             <button className='text-green-600'>See All</button>
         </div>
         <div className='flex flex-wrap justify-around mt-5'>
-            <ShoesCard width='w-80' padding='p-4'/>
+            <ShoesCard width='w-96' padding='p-4'/>
             <ShoesCard width='w-80' padding='p-4'/>
             <ShoesCard width='w-80' padding='p-4'/>
             <ShoesCard width='w-80' padding='p-4'/>
